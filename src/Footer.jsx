@@ -6,7 +6,7 @@ let Footer = () => {
     <footer>
       <div className="footer-box text-[var(--primarytext)] border border-b-0 border-r-0 border-l-0 border-t-gray-400 mx-10 pt-10 pb-16">
         {/* <hr className="" /> */}
-        <div className=" flex justify-around items-center">
+        <div className=" flex lg:justify-around lg:items-center md:justify-around md:items-center flex-wrap">
           <div className="phone max-w-xs">
             <div className="text-xl font-semibold">Phone</div>
             <div className="font-semibold my-1">786-034-5351</div>
@@ -17,9 +17,12 @@ let Footer = () => {
           </div>
           <div className="follow max-w-xs">
             <div className="text-xl font-semibold">Follow Me</div>
-            <div className="font-semibold my-1 flex items-center">
+            <div className="font-semibold my-1 flex lg:items-center">
               {/* LinkedIn */}
-              <a href="/">
+              <a
+                href="https://www.linkedin.com/in/shivam-singh-kushwaha/"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -34,7 +37,10 @@ let Footer = () => {
               </a>
 
               {/* Instagram */}
-              <a href="/">
+              <a
+                href="https://www.instagram.com/official_shivamsk/"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"

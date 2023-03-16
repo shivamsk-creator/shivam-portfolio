@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+import "./hamburger.css";
+
 let Navbar = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
   return (
     <nav>
       <div className="navbar-box flex items-center justify-between py-4 text-[var(--primarytext)]">
@@ -17,7 +21,7 @@ let Navbar = () => {
           <div className="role font-semibold mx-10">Frontend Developer</div>
         </div>
         <div className="right mr-20">
-          <div className="right-box flex font-semibold items-center">
+          <div className="right-box hidden lg:flex font-semibold items-center">
             <div className="cursor-pointer hover:text-purple-800 py-2 transition-colors delay-100 ease-out duration-200">
               <NavLink to="/resume">Resume</NavLink>
             </div>
@@ -28,6 +32,47 @@ let Navbar = () => {
             <div className="mx-2">|</div>
             <div className="cursor-pointer hover:text-purple-800 py-2 transition-colors delay-100 ease-out duration-200">
               <NavLink to="/contact">Contact</NavLink>
+            </div>
+          </div>
+          <div className="MOBILE-MENU flex lg:hidden absolute top-5 right-5">
+            <div
+              className="HAMBURGER-ICON space-y-2"
+              onClick={() => setIsNavOpen((prev) => !prev)}
+            >
+              <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+            </div>
+
+            <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+              <div
+                className="absolute top-0 right-0 px-8 py-8"
+                onClick={() => setIsNavOpen(false)}
+              >
+                <svg
+                  className="h-8 w-8 text-gray-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </div>
+              <ul className="flex flex-col items-center justify-between min-h-[250px]">
+                <li className="border-b border-gray-400 my-8 uppercase">
+                  <a href="/about">About</a>
+                </li>
+                <li className="border-b border-gray-400 my-8 uppercase">
+                  <a href="/portfolio">Portfolio</a>
+                </li>
+                <li className="border-b border-gray-400 my-8 uppercase">
+                  <a href="/contact">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
