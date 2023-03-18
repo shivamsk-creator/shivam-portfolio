@@ -1,21 +1,33 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 let Footer = () => {
   return (
     <footer>
       <div className="footer-box text-[var(--primarytext)] border border-b-0 border-r-0 border-l-0 border-t-gray-400 mx-10 pt-10 pb-16">
         {/* <hr className="" /> */}
-        <div className=" flex lg:justify-around lg:items-center md:justify-around md:items-center flex-wrap">
-          <div className="phone max-w-xs">
+        <div className=" flex justify-between lg:justify-around lg:items-center md:justify-around md:items-center flex-wrap">
+          <div className="phone max-w-xs mx-2 my-2">
             <div className="text-xl font-semibold">Phone</div>
-            <div className="font-semibold my-1">786-034-5351</div>
+            <div className="font-semibold my-1">
+              <a href="tel:+917860345351" target="_blank">
+                <span className="hover:text-purple-400 underline underline-offset-4 decoration-slate-500 hover:decoration-purple-400 transition-colors delay-100 ease-out duration-200">
+                  +91 7860345351
+                </span>
+              </a>
+            </div>
           </div>
-          <div className="email max-w-xs">
+          <div className="email max-w-xs mx-2 my-2">
             <div className="text-xl font-semibold">Email</div>
-            <div className="font-semibold my-1">ssk7860345351@gmail.com</div>
+            <div className="font-semibold my-1">
+              <a href="mailto:ssk7860345351@gmail.com" target="_blank">
+                <span className="hover:text-purple-400 underline underline-offset-4 decoration-slate-500 hover:decoration-purple-400 transition-colors delay-100 ease-out duration-200">
+                  ssk7860345351@gmail.com
+                </span>
+              </a>
+            </div>
           </div>
-          <div className="follow max-w-xs">
+          <div className="follow max-w-xs mx-2 my-2">
             <div className="text-xl font-semibold">Follow Me</div>
             <div className="font-semibold my-1 flex lg:items-center">
               {/* LinkedIn */}
@@ -55,9 +67,16 @@ let Footer = () => {
               </a>
             </div>
           </div>
-          <div className="copyright max-w-xs">
+          <div className="copyright max-w-xs mx-2 my-2">
             <div className="font-semibold">
-              &#169; 2023 By Shivam Singh Kushwaha
+              &#169; 2023 By
+              <NavLink to="/">
+                {" "}
+                <span className="underline underline-offset-4 decoration-slate-500 hover:decoration-white">
+                  {" "}
+                  Shivam Singh Kushwaha
+                </span>
+              </NavLink>
             </div>
           </div>
         </div>

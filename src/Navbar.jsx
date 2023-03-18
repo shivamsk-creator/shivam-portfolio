@@ -9,8 +9,8 @@ let Navbar = () => {
   return (
     <nav>
       <div className="navbar-box flex items-center justify-between py-4 text-[var(--primarytext)]">
-        <div className="left flex items-center ml-20">
-          <div className="name text-[var(--primarytext)] flex flex-col justify-center items-center font-extrabold text-xl cursor-pointer">
+        <div className="left flex items-center ml-10 sm:ml-20 md:ml-20 lg:ml-20">
+          <div className="name text-[var(--primarytext)] flex flex-col text-center justify-center items-center font-extrabold text-xl cursor-pointer">
             <div>
               <NavLink to="/">Shivam Singh</NavLink>
             </div>
@@ -18,23 +18,25 @@ let Navbar = () => {
               <NavLink to="/">Kushwaha</NavLink>
             </div>
           </div>
-          <div className="role font-semibold mx-10">Frontend Developer</div>
+          <div className="role font-semibold mx-10 animate-pulse">
+            Frontend Developer
+          </div>
         </div>
-        <div className="right mr-20">
+        <div className="right mr-10 sm:mr-20">
           <div className="right-box hidden lg:flex font-semibold items-center">
-            <div className="cursor-pointer hover:text-purple-800 py-2 transition-colors delay-100 ease-out duration-200">
+            <div className="cursor-pointer hover:text-purple-500 py-2 transition-colors delay-100 ease-out duration-200">
               <NavLink to="/resume">Resume</NavLink>
             </div>
             <div className="mx-2">|</div>
-            <div className="cursor-pointer hover:text-purple-800 py-2 transition-colors delay-100 ease-out duration-200">
+            <div className="cursor-pointer hover:text-purple-500 py-2 transition-colors delay-100 ease-out duration-200">
               <NavLink to="/projects">Projects</NavLink>
             </div>
             <div className="mx-2">|</div>
-            <div className="cursor-pointer hover:text-purple-800 py-2 transition-colors delay-100 ease-out duration-200">
+            <div className="cursor-pointer hover:text-purple-500 py-2 transition-colors delay-100 ease-out duration-200">
               <NavLink to="/contact">Contact</NavLink>
             </div>
           </div>
-          <div className="MOBILE-MENU flex lg:hidden absolute top-5 right-5">
+          <div className="MOBILE-MENU flex lg:hidden mx-auto bg-black">
             <div
               className="HAMBURGER-ICON space-y-2"
               onClick={() => setIsNavOpen((prev) => !prev)}
@@ -50,7 +52,7 @@ let Navbar = () => {
                 onClick={() => setIsNavOpen(false)}
               >
                 <svg
-                  className="h-8 w-8 text-gray-600"
+                  className="h-8 w-8 text-white"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -62,15 +64,26 @@ let Navbar = () => {
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </div>
-              <ul className="flex flex-col items-center justify-between min-h-[250px]">
+              <ul className="flex flex-col items-center justify-between min-h-[250px] bg-black">
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/about">About</a>
+                  <NavLink to="/" onClick={() => setIsNavOpen(false)}>
+                    Home
+                  </NavLink>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/portfolio">Portfolio</a>
+                  <NavLink to="/resume" onClick={() => setIsNavOpen(false)}>
+                    Resume
+                  </NavLink>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/contact">Contact</a>
+                  <NavLink to="/projects" onClick={() => setIsNavOpen(false)}>
+                    Projects
+                  </NavLink>
+                </li>
+                <li className="border-b border-gray-400 my-8 uppercase">
+                  <NavLink to="/contact" onClick={() => setIsNavOpen(false)}>
+                    Contact
+                  </NavLink>
                 </li>
               </ul>
             </div>

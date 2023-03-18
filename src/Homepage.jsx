@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import profilePic from "./img/profile-pic.jpg";
 
 let Homepage = () => {
@@ -8,12 +9,12 @@ let Homepage = () => {
   });
 
   return (
-    <section className="pb-10">
+    <section className="pb-10 pt-10 sm:pt-0">
       <div className="home-section flex flex-col lg:flex-row justify-center items-center">
         {/* Left Photo  section */}
         <div className="lg:mx-24 ">
           <img
-            className="rounded-full h-96 w-96"
+            className="rounded-full h-80 w-80 sm:h-96 md:h-96 lg:h-96 sm:w-96 md:w-96 lg:w-96"
             src={profilePic}
             alt="My Pic"
           />
@@ -36,13 +37,13 @@ let Homepage = () => {
           {/* Next Page Circles */}
           <div className="circles my-10 flex flex-wrap lg:flex-nowrap justify-center">
             <div className="mx-5 lg:my-0 my-5 resume text-[var(--primarytext)] text-xl bg-purple-400 w-32 h-32 rounded-full flex justify-center items-center cursor-pointer hover:bg-white hover:text-[#02012e] transition-colors delay-100 ease-out duration-200">
-              Resume
+              <NavLink to="/resume">Resume</NavLink>
             </div>
             <div className=" mx-5 lg:my-0 my-5 resume text-[var(--primarytext)] text-xl bg-blue-400 w-32 h-32 rounded-full flex justify-center items-center cursor-pointer hover:bg-white hover:text-[#02012e] transition-colors delay-100 ease-out duration-200">
-              Projects
+              <NavLink to="/projects">Projects</NavLink>
             </div>
             <div className="mx-5 lg:my-0 my-5 resume text-[var(--primarytext)] text-xl bg-green-400 w-32 h-32 rounded-full flex justify-center items-center cursor-pointer hover:bg-white hover:text-[#02012e] transition-colors delay-100 ease-out duration-200">
-              Contact
+              <NavLink to="/contact">Contact</NavLink>
             </div>
           </div>
         </div>

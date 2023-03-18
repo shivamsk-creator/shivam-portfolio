@@ -4,15 +4,17 @@ import SwiperCards from "./SwiperCards";
 let Resume = () => {
   return (
     <section className="py-10">
-      <div className="heading text-5xl w-1/2 text-center py-5">Resume</div>
+      <div className="heading text-5xl w-1/2 ml-5 sm:ml-0 text-center py-5">
+        Resume
+      </div>
       {/* Work Experience  */}
-      <div className="work-experience flex py-10 border border-t-0 border-r-0 border-l-0 border-b-gray-400 mx-20">
-        <div className="left-box text-2xl w-1/2 flex justify-center">
+      <div className="work-experience flex flex-col sm:flex-row py-10 border border-t-0 border-r-0 border-l-0 border-b-gray-400 mx-5 sm:mx-20">
+        <div className="left-box text-2xl w-1/2 flex sm:justify-center">
           <div>
             Work <br /> Experience
           </div>
         </div>
-        <div className="right-box flex ">
+        <div className="right-box flex mt-10 sm:mt-0">
           <div className="duration w-28">2023 - Present</div>
           <div className="content mx-5">
             <h3 className="text-lg mb-5">Frontend Developer</h3>
@@ -24,12 +26,12 @@ let Resume = () => {
       </div>
 
       {/* Education  */}
-      <div className="education flex py-20 border border-t-0 border-r-0 border-l-0 border-b-gray-400 mx-20">
+      <div className="education flex flex-col sm:flex-row py-20 border border-t-0 border-r-0 border-l-0 border-b-gray-400 mx-5 sm:mx-20">
         <div className="left-box text-2xl w-1/2 flex justify-center">
           <div>Education</div>
         </div>
-        <div className="right-box ">
-          <div className="content flex">
+        <div className="right-box mt-10 sm:mt-0 ">
+          <div className="flex">
             <div className="duration w-28">2022 - Present</div>
             {/* BCA */}
             <div className="content mx-5">
@@ -54,13 +56,13 @@ let Resume = () => {
         </div>
       </div>
       {/* Skills & Expertise  */}
-      <div className="Skills flex py-10 mx-20">
+      <div className="Skills flex flex-col sm:flex-row py-10 mx-5 sm:mx-20">
         <div className="left-box text-2xl w-1/2 flex justify-center">
           <div>
             Skills <br /> & Expertise
           </div>
         </div>
-        <div className="right-box flex ">
+        <div className="right-box flex mt-10 sm:mt-0 ">
           <div className="duration w-28"></div>
           <div className="content mx-5">
             <SwiperCards />
