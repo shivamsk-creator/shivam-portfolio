@@ -34,7 +34,7 @@ let Homepage = () => {
                 }}
               />
             </h3>
-            <p className="max-w-sm">
+            <p className="max-w-sm mt-3">
               I'm Shivam Singh Kushwaha, a Frontend Developer. I develop fully
               responsive and mobile friendly websites. I work on technologies
               like HTML, CSS, JavaScript, Bootstrap, Tailwind CSS. My
