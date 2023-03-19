@@ -20,7 +20,11 @@ let Projects = () => {
           </p>
         </div>
         <div className="project-right mx-auto sm:mx-0 md:mx-0 lg:mx-20 mt-10 sm:mt-0 md:mt-0 lg:mt-0">
-          <a href="https://shivamsk-creator.github.io/gudwork/" target="_blank">
+          <a
+            href="https://shivamsk-creator.github.io/gudwork/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="w-80 h-64 lg:w-96 lg:h-72 animate-pulse"
               src={gudworkImg}
@@ -40,7 +44,11 @@ let Projects = () => {
           </p>
         </div>
         <div className="project-right mx-auto sm:mx-0 md:mx-0 lg:mx-20 mt-10 sm:mt-0 md:mt-0 lg:mt-0">
-          <a href="https://shivamsk-creator.github.io/sixrer/" target="_blank">
+          <a
+            href="https://shivamsk-creator.github.io/sixrer/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="w-80 h-64 lg:w-96 lg:h-72 animate-pulse"
               src={sixrerImg}
@@ -60,7 +68,11 @@ let Projects = () => {
           </p>
         </div>
         <div className="project-right mx-auto sm:mx-0 md:mx-0 lg:mx-20 mt-10 sm:mt-0 md:mt-0 lg:mt-0">
-          <a href="https://shivamsk-creator.github.io/to-do/" target="_blank">
+          <a
+            href="https://shivamsk-creator.github.io/to-do/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="w-80 h-64 lg:w-96 lg:h-72 animate-pulse"
               src={toDoImg}
@@ -82,6 +94,7 @@ let Projects = () => {
           <a
             href="https://shivamsk-creator.github.io/happy-new-year/"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="w-80 h-64 lg:w-96 lg:h-72 animate-pulse"

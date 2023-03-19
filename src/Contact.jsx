@@ -18,7 +18,11 @@ let Contact = () => {
               {/* mail */}
               <p className="my-1">
                 If you want mail:{" "}
-                <a href="mailto:ssk7860345351@gmail.com" target="_blank">
+                <a
+                  href="mailto:ssk7860345351@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <span className="hover:text-purple-400 underline underline-offset-4 decoration-slate-500 hover:decoration-purple-400 transition-colors delay-100 ease-out duration-200">
                     ssk7860345351@gmail.com
                   </span>
@@ -27,7 +31,7 @@ let Contact = () => {
               {/* Call */}
               <p className="my-1">
                 If you want to hear my voice:{" "}
-                <a href="tel:+917860345351" target="_blank">
+                <a href="tel:+917860345351" target="_blank" rel="noreferrer">
                   <span className="hover:text-purple-400 underline underline-offset-4 decoration-slate-500 hover:decoration-purple-400 transition-colors delay-100 ease-out duration-200">
                     +91 7860345351
                   </span>
@@ -39,6 +43,7 @@ let Contact = () => {
                 <a
                   href="https://www.instagram.com/official_shivamsk/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <span className="hover:text-purple-400 underline underline-offset-4 decoration-slate-500 hover:decoration-purple-400 transition-colors delay-100 ease-out duration-200">
                     @official_shivamsk

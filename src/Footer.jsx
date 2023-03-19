@@ -11,7 +11,7 @@ let Footer = () => {
           <div className="phone max-w-xs mx-2 my-2">
             <div className="text-xl font-semibold">Phone</div>
             <div className="font-semibold my-1">
-              <a href="tel:+917860345351" target="_blank">
+              <a href="tel:+917860345351" target="_blank" rel="noreferrer">
                 <span className="hover:text-purple-400 underline underline-offset-4 decoration-slate-500 hover:decoration-purple-400 transition-colors delay-100 ease-out duration-200">
                   +91 7860345351
                 </span>
@@ -22,7 +22,11 @@ let Footer = () => {
           <div className="email max-w-xs mx-2 my-2">
             <div className="text-xl font-semibold">Email</div>
             <div className="font-semibold my-1">
-              <a href="mailto:ssk7860345351@gmail.com" target="_blank">
+              <a
+                href="mailto:ssk7860345351@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span className="hover:text-purple-400 underline underline-offset-4 decoration-slate-500 hover:decoration-purple-400 transition-colors delay-100 ease-out duration-200">
                   ssk7860345351@gmail.com
                 </span>
@@ -37,6 +41,7 @@ let Footer = () => {
               <a
                 href="https://www.linkedin.com/in/shivam-singh-kushwaha/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -55,6 +60,7 @@ let Footer = () => {
               <a
                 href="https://www.instagram.com/official_shivamsk/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +75,7 @@ let Footer = () => {
                 </svg>
               </a>
               {/* Whatsapp */}
-              <a href="https://wa.link/5sdd6i" target="_blank">
+              <a href="https://wa.link/5sdd6i" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
