@@ -53,6 +53,17 @@ let Resume = () => {
               </p>
             </div>
           </div>
+          {/* HighSchool */}
+          <div className="content flex mt-10">
+            <div className="duration w-28">2018 - 2021</div>
+            <div className="mx-5">
+              <h3 className="text-lg mb-4">High School and Intermediate</h3>
+              <p className="max-w-xs">
+                Completed Highschool and Intermediate from Career Convent
+                College by ISC Board .
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       {/* Skills & Expertise  */}
@@ -62,7 +73,7 @@ let Resume = () => {
             Skills <br /> & Expertise
           </div>
         </div>
-        <div className="right-box flex mt-10 sm:mt-0 ">
+        <div className="right-box flex flex-col sm:flex-row mt-10 sm:mt-0 ">
           <div className="duration w-28"></div>
           <div className="content mx-5">
             <SwiperCards />
