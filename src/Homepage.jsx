@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import profilePic from "./img/profile-pic.jpg";
+import Typewriter from "typewriter-effect";
 
 let Homepage = () => {
   useEffect(() => {
@@ -24,7 +25,15 @@ let Homepage = () => {
           {/* Profile Content */}
           <div className="profile-content px-8 md:px-20 lg:px-0">
             <h1 className="text-8xl  mt-16 mb-7 ">Hello</h1>
-            <h3 className="text-2xl">A Bit About Me</h3>
+            <h3 className="text-2xl">
+              <Typewriter
+                options={{
+                  strings: ["A Bit About Me", "Frontend Developer"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h3>
             <p className="max-w-sm">
               I'm Shivam Singh Kushwaha, a Frontend Developer. I develop fully
               responsive and mobile friendly websites. I work on technologies

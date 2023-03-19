@@ -18,7 +18,7 @@ let Navbar = () => {
               <NavLink to="/">Kushwaha</NavLink>
             </div>
           </div>
-          <div className="role font-semibold mx-10 animate-pulse">
+          <div className="role font-semibold mx-10 animate-bounce">
             Frontend Developer
           </div>
         </div>
