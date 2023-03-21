@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import profilePic from "./img/profile-pic.jpg";
+// import profilePic from "./img/profile-pic.jpg"
+import profilePic2 from "./img/profile-pic2.jpg";
 import Typewriter from "typewriter-effect";
 
 let Homepage = () => {
@@ -16,7 +17,7 @@ let Homepage = () => {
         <div className="lg:mx-24 ">
           <img
             className="rounded-full h-80 w-80 sm:h-96 md:h-96 lg:h-96 sm:w-96 md:w-96 lg:w-96"
-            src={profilePic}
+            src={profilePic2}
             alt="My Pic"
           />
         </div>
