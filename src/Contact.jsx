@@ -55,7 +55,7 @@ let Contact = () => {
         </div>
         <div className="right-section mt-10 lg:mt-0">
           <div className="form px-5 sm:px-10">
-            <form netlify>
+            <form name="contact" method="post" netlify>
               <div className="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
                   <label
@@ -70,6 +70,7 @@ let Contact = () => {
                     className="bg-gray-50 border border-white text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder=""
                     required
+                    name="first-name"
                   />
                 </div>
                 <div>
@@ -85,6 +86,7 @@ let Contact = () => {
                     className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder=""
                     required
+                    name="last-name"
                   />
                 </div>
                 <div>
@@ -115,6 +117,7 @@ let Contact = () => {
                     className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder=""
                     required
+                    name="subject"
                   />
                 </div>
                 <div>
@@ -129,6 +132,7 @@ let Contact = () => {
                     rows="4"
                     class="block p-2.5 w-full text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="You want to ask..."
+                    name="message"
                   ></textarea>
                 </div>
                 <div className="">
