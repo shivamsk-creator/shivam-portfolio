@@ -56,6 +56,7 @@ let Contact = () => {
         <div className="right-section mt-10 lg:mt-0">
           <div className="form px-5 sm:px-10">
             <form name="contact" method="post" netlify>
+              <input type="hidden" name="form-name" value="contact" />
               <div className="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
                   <label
@@ -102,6 +103,7 @@ let Contact = () => {
                     className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder=""
                     required
+                    name="email"
                   />
                 </div>
                 <div>
