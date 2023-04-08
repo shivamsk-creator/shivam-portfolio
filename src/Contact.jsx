@@ -55,7 +55,7 @@ let Contact = () => {
         </div>
         <div className="right-section mt-10 lg:mt-0">
           <div className="form px-5 sm:px-10">
-            <form>
+            <form netlify>
               <div className="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
                   <label
@@ -136,7 +136,7 @@ let Contact = () => {
                     type="submit"
                     className="mx-5 my-5 resume text-[var(--primarytext)] text-xl bg-purple-500 w-32 h-32 rounded-full flex justify-center items-center cursor-pointer hover:bg-white hover:text-[#02012e] transition-colors delay-100 ease-out duration-200"
                   >
-                    <div>Submit</div>
+                    Submit
                   </button>
                 </div>
               </div>
