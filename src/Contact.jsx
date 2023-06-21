@@ -69,7 +69,7 @@ let Contact = () => {
                     type="text"
                     id="first_name"
                     className="bg-gray-50 border border-white text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    placeholder=""
+                    placeholder="John"
                     required
                     name="first-name"
                   />
@@ -85,7 +85,7 @@ let Contact = () => {
                     type="text"
                     id="last_name"
                     className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    placeholder=""
+                    placeholder="Doe"
                     required
                     name="last-name"
                   />
@@ -101,7 +101,7 @@ let Contact = () => {
                     type="email"
                     id="email"
                     className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    placeholder=""
+                    placeholder="abc@gmail.com"
                     required
                     name="email"
                   />
@@ -117,7 +117,7 @@ let Contact = () => {
                     type="text"
                     id="subject"
                     className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    placeholder=""
+                    placeholder="Hotel Website"
                     required
                     name="subject"
                   />
