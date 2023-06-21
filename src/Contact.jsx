@@ -61,14 +61,14 @@ let Contact = () => {
                 <div>
                   <label
                     htmlFor="first_name"
-                    className="block mb-2 font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 font-medium text-gray-900  "
                   >
                     First name
                   </label>
                   <input
                     type="text"
                     id="first_name"
-                    className="bg-gray-50 border border-white text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-white text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     placeholder=""
                     required
                     name="first-name"
@@ -77,14 +77,14 @@ let Contact = () => {
                 <div>
                   <label
                     htmlFor="last_name"
-                    className="block mb-2 font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 font-medium text-gray-900  "
                   >
                     Last name
                   </label>
                   <input
                     type="text"
                     id="last_name"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     placeholder=""
                     required
                     name="last-name"
@@ -93,14 +93,14 @@ let Contact = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block mb-2 font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 font-medium text-gray-900  "
                   >
                     Email
                   </label>
                   <input
                     type="email"
                     id="email"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     placeholder=""
                     required
                     name="email"
@@ -109,14 +109,14 @@ let Contact = () => {
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block mb-2 font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 font-medium text-gray-900  "
                   >
                     Subject
                   </label>
                   <input
                     type="text"
                     id="subject"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     placeholder=""
                     required
                     name="subject"
@@ -125,14 +125,14 @@ let Contact = () => {
                 <div>
                   <label
                     for="message"
-                    class="block mb-2 font-medium text-gray-900 dark:text-white"
+                    class="block mb-2 font-medium text-gray-900  "
                   >
                     Message
                   </label>
                   <textarea
                     id="message"
                     rows="4"
-                    class="block p-2.5 w-full text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="block p-2.5 w-full text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
                     placeholder="You want to ask..."
                     name="message"
                   ></textarea>
