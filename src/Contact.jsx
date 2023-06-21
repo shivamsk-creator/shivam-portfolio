@@ -61,7 +61,7 @@ let Contact = () => {
                 <div>
                   <label
                     htmlFor="first_name"
-                    className="block mb-2 font-medium text-gray-900  "
+                    className="block mb-2 font-medium text-white  "
                   >
                     First name
                   </label>
@@ -77,7 +77,7 @@ let Contact = () => {
                 <div>
                   <label
                     htmlFor="last_name"
-                    className="block mb-2 font-medium text-gray-900  "
+                    className="block mb-2 font-medium text-white  "
                   >
                     Last name
                   </label>
@@ -93,7 +93,7 @@ let Contact = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block mb-2 font-medium text-gray-900  "
+                    className="block mb-2 font-medium text-white  "
                   >
                     Email
                   </label>
@@ -109,7 +109,7 @@ let Contact = () => {
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block mb-2 font-medium text-gray-900  "
+                    className="block mb-2 font-medium text-white  "
                   >
                     Subject
                   </label>
@@ -125,7 +125,7 @@ let Contact = () => {
                 <div>
                   <label
                     for="message"
-                    class="block mb-2 font-medium text-gray-900  "
+                    class="block mb-2 font-medium text-white  "
                   >
                     Message
                   </label>
