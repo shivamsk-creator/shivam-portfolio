@@ -15,7 +15,7 @@ let Resume = () => {
           </div>
         </div>
         <div className="right-box flex mt-10 sm:mt-0">
-          <div className="duration w-28">2023 - Present</div>
+          <div className="duration w-28">2022 - Present</div>
           <div className="content mx-5">
             <h3 className="text-lg mb-5">Frontend Developer</h3>
             <p className="max-w-xs">
