@@ -3,6 +3,7 @@ import toDoImg from "./img/to-do.jpeg";
 import gudworkImg from "./img/gudwork.jpeg";
 import sixrerImg from "./img/sixrer.jpeg";
 import postmortemshalaImg from "./img/postmortemshala.png";
+import SMSEducationImg from "./img/sms-frontend.png";
 
 let Projects = () => {
   const projects = [
@@ -11,6 +12,12 @@ let Projects = () => {
       desc: "Postmortemshala is an online learning platform where students can learn and practice their skills. This website is developed in React and Tailwind CSS.",
       img: postmortemshalaImg,
       link: "https://postmortemshala.co.in",
+    },
+    {
+      title: "SMS Education - Coaching Institute Management",
+      desc: "SMS Education is a well-diversified an autonomous institute in the field of computer literacy.Whole institute management system with student,instructor,and admin panel developed on react and tailwind CSS",
+      img: SMSEducationImg,
+      link: "https://smseducations.com",
     },
     {
       title: "GudWork - Business Website",
@@ -42,7 +49,9 @@ let Projects = () => {
         return (
           <div className="project flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center md:justify-around lg:justify-center my-20 px-5">
             <div className="project-left text-center sm:text-start md:text-start lg:text-start">
-              <h3 className="text-2xl">{project?.title}</h3>
+              <h3 className="text-2xl max-w-md text-center">
+                {project?.title}
+              </h3>
               <p className="mx-auto max-w-md mt-5">{project?.desc}</p>
             </div>
             <div className="project-right mx-auto sm:mx-0 md:mx-0 lg:mx-20 mt-10 sm:mt-0 md:mt-0 lg:mt-0">

@@ -19,7 +19,7 @@ let Navbar = () => {
             </div>
           </div>
           <div className="role font-semibold mx-10 animate-bounce">
-            Frontend Developer
+            ReactJS Developer
           </div>
         </div>
         <div className="right mr-10 sm:mr-20">

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import profilePic from "./img/profile-pic.jpg"
+import profilePic from "./img/profile-pic.jpg";
 // import profilePic2 from "./img/profile-pic2.jpg";
 import Typewriter from "typewriter-effect";
 
@@ -29,18 +29,18 @@ let Homepage = () => {
             <h3 className="text-2xl">
               <Typewriter
                 options={{
-                  strings: ["A Bit About Me", "Frontend Developer"],
+                  strings: ["A Bit About Me", "ReactJS Developer"],
                   autoStart: true,
                   loop: true,
                 }}
               />
             </h3>
             <p className="max-w-sm mt-3">
-              I'm Shivam Singh Kushwaha, a Frontend Developer. I develop fully
+              I'm Shivam Singh Kushwaha, a ReactJS Developer. I develop fully
               responsive and mobile friendly websites. I work on technologies
-              like HTML, CSS, JavaScript, Bootstrap, Tailwind CSS. My
-              specialization in ReactJS. I host websites on GitHub using Git and
-              AWS. Development is my passion and profession both.
+              like ReactJS, NextJS, React Native, NodeJS, NestJS, MongoDB and
+              more. I deploy websites on hosting servers. Development is my
+              passion and profession both.
             </p>
           </div>
 
